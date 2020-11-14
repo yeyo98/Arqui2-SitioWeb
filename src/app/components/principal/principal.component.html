@@ -1,0 +1,58 @@
+<!--<div style="display: block;">
+    <canvas baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins">
+    </canvas>
+  </div>-->
+
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#">
+        <img src="https://semi1-proyectoclase.s3.us-east-2.amazonaws.com/ArchivoPaginaWeb/Disinfection+Station-new.gif" 
+        width="49%"  class="d-inline-block align-top " alt="">
+    </a>
+  </nav>
+  
+  <div class="row">
+    <div class="col-6">
+        <br>
+        <p class="h3 text-primary text-center"> PERSONAS INFECTADAS </p>
+
+        <div style="display: block;">
+            <canvas baseChart 
+              [data]="pieChartData" 
+              [labels]="pieChartLabels" 
+              [chartType]="pieChartType"
+              [options]="pieChartOptions"
+              [plugins]="pieChartPlugins"
+              [colors]="pieChartColor"
+              [legend]="pieChartLegend">
+            </canvas>
+          </div>
+
+    </div>
+    <div class="col-6">
+        <br>
+        <p class="h3 text-success text-center"> TRANSITO DE PERSONAS </p>
+        
+        <div style="display: block;">
+            <canvas baseChart 
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [colors]="barChartColor"
+              [chartType]="barChartType">
+            </canvas>
+        </div>
+
+    </div>
+  </div>
+
+  

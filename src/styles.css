@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url('https://semi1-proyectoclase.s3.us-east-2.amazonaws.com/ArchivoPaginaWeb/large-background.jpg') no-repeat center center fixed;
+    background-size: 100% 100%;
+}
